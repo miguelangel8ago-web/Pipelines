@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Secretos reales; solo .env.example se sube.
+.env
+
+# Reportes generados, no son parte del código fuente.
+excel/salidas/
+
+# Reportes reales de referencia (datos sensibles de la empresa) — nunca se suben.
+ReporteTSE_YTD*.xlsx
+
+# Archivos temporales de bloqueo de Excel (se crean al tener el archivo abierto).
+~$*.xlsx
+
+# Logs de uvicorn cuando se redirige la salida a archivo.
+uvicorn_out.log
+uvicorn_err.log
